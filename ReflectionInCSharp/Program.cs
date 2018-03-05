@@ -41,6 +41,15 @@ namespace ReflectionInCSharp
             Console.WriteLine("//Constructors");
 
             PrintMembers(ci);
+            Console.WriteLine();
+
+            Console.WriteLine("\nReflection.MemberInfo");
+
+            //Gets the Type and MemberInfo
+            Type myType = Type.GetType("System.IO.File");
+
+            ////Gets and displays the DeclaratingType method.
+            //Console.WriteLine("\nThere are {0} members in {1}.",myType.Module,myType.FullName);
 
 
         }
